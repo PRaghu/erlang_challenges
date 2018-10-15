@@ -1,3 +1,9 @@
-# erlang_challenges
+erlang_challenges
+=====
 
-*** Add erlang challenges ***
+An OTP application
+
+Build
+-----
+
+    $ rebar3 compile
