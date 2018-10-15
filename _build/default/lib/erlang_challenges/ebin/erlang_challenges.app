@@ -5,8 +5,8 @@
               {mod,{erlang_challenges_app,[]}},
               {applications,[kernel,stdlib]},
               {env,[]},
-              {modules,[erlang_challenges_app,erlang_challenges_sup,
-                        gr_cipher_test]},
+              {modules,[date_shift,erlang_challenges_app,
+                        erlang_challenges_sup,gr_cipher_test]},
               {maintainers,[]},
               {licenses,["Apache 2.0"]},
               {links,[]}]}.
