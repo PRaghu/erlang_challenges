@@ -1,8 +1,10 @@
--module(date_shift).
+-module(datetime_shift).
 
 -export([
   shift_days/1,
-  shift_months/1
+  shift_months/1,
+  shift_hours/1,
+  shift_mins/1
 ]).
 
 -define(SECONDS_IN_A_DAY, 86400).
@@ -38,6 +40,15 @@ shift_months(NumberOfMonths) ->
     false ->
       error(out_of_bounds)
   end.
+
+-spec shift_hours(integer()) -> calender:datetime().
+shift_hours(NumberOfHours) ->
+  calendar:datetime_to_gregorian_seconds(calendar:universal_time()) + NumberOfHours * 60  * 60.
+
+-spec shift_mins(integer()) -> calender:datetime().
+shift_mins(NumberOfMins) ->
+  calendar:datetime_to_gregorian_seconds(calendar:universal_time()) + NumberOfMins * 60.
+
 
 %% @doc Returns `Date' if valid. Otherwise, returns `Date' replacing `Day` with the last day of the month.
 find_valid_date(Date) ->
