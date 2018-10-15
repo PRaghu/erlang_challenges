@@ -41,14 +41,19 @@ shift_months(NumberOfMonths) ->
       error(out_of_bounds)
   end.
 
+%% @doc Moves the received date number of hours to the future or to the past.
 -spec shift_hours(integer()) -> calender:datetime().
 shift_hours(NumberOfHours) ->
   calendar:datetime_to_gregorian_seconds(calendar:universal_time()) + NumberOfHours * 60  * 60.
 
+%% @doc Moves the received date number of mins to the future or to the past.
 -spec shift_mins(integer()) -> calender:datetime().
 shift_mins(NumberOfMins) ->
   calendar:datetime_to_gregorian_seconds(calendar:universal_time()) + NumberOfMins * 60.
 
+%%%===================================================================
+%%% Internal Functions
+%%%===================================================================
 
 %% @doc Returns `Date' if valid. Otherwise, returns `Date' replacing `Day` with the last day of the month.
 find_valid_date(Date) ->
