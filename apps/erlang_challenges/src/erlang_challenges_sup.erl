@@ -31,8 +31,15 @@ start_link() ->
 %% Before OTP 18 tuples must be used to specify a child. e.g.
 %% Child :: {Id,StartFunc,Restart,Shutdown,Type,Modules}
 init([]) ->
-    {ok, { {one_for_all, 0, 1}, []} }.
+    {ok, { {one_for_all, 0, 1}, [child_spec(cache_storage)]}}.
 
 %%====================================================================
 %% Internal functions
 %%====================================================================
+
+child_spec(Name) ->
+  #{
+    id      => Name,
+    start   => {Name, start_link, []},
+    restart => permanent
+  }.
