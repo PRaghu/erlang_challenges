@@ -1,0 +1,36 @@
+=== Suite started at 2018-12-16 00:28:14
+=== Starting test, 1 test cases
+=cases         1
+=user          raghu
+=host          nohost
+=hosts         nohost 
+=emulator_vsn  10.0
+=emulator      beam
+=otp_release   21
+=started       2018-12-16 00:28:14
+=case          cache_storage_SUITE:init_per_suite
+=logfile       cache_storage_suite.init_per_suite.html
+=started       2018-12-16 00:28:14
+=ended         2018-12-16 00:28:14
+=result        ok
+=elapsed       0.002334
+=case          cache_storage_SUITE:set_get
+=logfile       cache_storage_suite.set_get.html
+=started       2018-12-16 00:28:14
+=ended         2018-12-16 00:28:16
+=result        ok
+=elapsed       2.001812
+=case          cache_storage_SUITE:end_per_suite
+=logfile       cache_storage_suite.end_per_suite.html
+=started       2018-12-16 00:28:16
+=ended         2018-12-16 00:28:16
+=result        ok
+=elapsed       4.0e-6
+=group_time    2.064s
+=== TEST COMPLETE, 1 ok, 0 failed of 1 test cases
+
+=finished      2018-12-16 00:28:16
+=failed        0
+=successful    1
+=user_skipped  0
+=auto_skipped  0
