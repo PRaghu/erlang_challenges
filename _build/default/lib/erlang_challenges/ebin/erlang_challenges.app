@@ -1,0 +1,13 @@
+{application,erlang_challenges,
+             [{description,"An OTP application"},
+              {vsn,"0.1.0"},
+              {registered,[]},
+              {mod,{erlang_challenges_app,[]}},
+              {applications,[kernel,stdlib]},
+              {env,[]},
+              {modules,[cache_storage,datetime_shift,econfig,
+                        erlang_challenges_app,erlang_challenges_sup,
+                        gr_cipher_test]},
+              {maintainers,[]},
+              {licenses,["Apache 2.0"]},
+              {links,[]}]}.

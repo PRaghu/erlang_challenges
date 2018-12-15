@@ -17,4 +17,9 @@ This module provide functionality of shifting of current datetime to the forward
 Cipher Test
 ===========
 
-This module is example decipher numbers to words based ascii.
+This module is example decipher numbers to words based on ascii values.
+
+Application Configuration file
+==============================
+
+Application configuration file details accross ets tables
