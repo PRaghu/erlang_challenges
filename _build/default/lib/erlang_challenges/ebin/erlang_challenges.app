@@ -7,7 +7,7 @@
               {env,[]},
               {modules,[cache_storage,datetime_shift,econfig,
                         erlang_challenges_app,erlang_challenges_sup,
-                        gr_cipher_test]},
+                        gr_cipher_test,utils_config]},
               {maintainers,[]},
               {licenses,["Apache 2.0"]},
               {links,[]}]}.
