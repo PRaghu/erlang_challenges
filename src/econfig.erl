@@ -80,7 +80,7 @@ do_init(Name, Entries) ->
 		{read_concurrency, true}
   	]),
   	true = ets:insert(Name, Entries),
-  	ok.
+  	ok = persistent_term:put(Name, Entries).
 
 %% @private
 lookup_element(Name, Key, Pos, Default) ->
