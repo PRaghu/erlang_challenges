@@ -1,0 +1,14 @@
+
+Common Test starting (cwd is /home/raghu/erlang/practice/erlang_practice)
+
+
+
+CWD set to: "/home/raghu/erlang/practice/erlang_practice/_build/test/logs/ct_run.erlang_challenges@raghu.2019-10-19_13.19.28"
+
+TEST INFO: 1 test(s), 1 case(s) in 1 suite(s)
+
+Testing lib.erlang_challenges: Starting test, 1 test cases
+Testing lib.erlang_challenges: TEST COMPLETE, 1 ok, 0 failed of 1 test cases
+
+Updating /home/raghu/erlang/practice/erlang_practice/_build/test/logs/index.html ... done
+Updating /home/raghu/erlang/practice/erlang_practice/_build/test/logs/all_runs.html ... done
