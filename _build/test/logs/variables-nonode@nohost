@@ -1,4 +1,0 @@
-{config,[]}.
-{event_handler,[]}.
-{ct_hooks,[cth_surefire]}.
-{enable_builtin_hooks,undefined}.
